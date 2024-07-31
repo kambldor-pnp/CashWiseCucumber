@@ -38,6 +38,22 @@ Scenario: add seller
     Then user click save
     Then user verify error message
 
+    @Search
+    Scenario: search name in search bar
+      Then user clicks on Expensess
+      Then user clicks on seller
+      Then user clicks on search bar
+      Then user will input a seller name
+
+
+      @NegativeSearch
+      Scenario: user enter a name that is not a seller
+        Then user clicks on Expensess
+        Then user clicks on seller
+        Then user clicks on search bar
+        Then user input wrong seller name "Johny"
+
+
 
 
 

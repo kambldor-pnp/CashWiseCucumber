@@ -100,6 +100,21 @@ public class AddSeller {
     public void user_verify_error_message() {
         Assert.assertTrue(seller.alertMessage.isDisplayed());
     }
+    @Then("user clicks on search bar")
+    public void user_clicks_on_search_bar() {
+      seller.searchBar.click();
+    }
+    @Then("user will input a seller name")
+    public void user_will_input_a_seller_name() {
+        seller.nameToSearch();
+    }
+    @Then("user input wrong seller name {string}")
+    public void user_input_wrong_seller_name(String name) {
+        seller.enterName(name);
+    }
+
+
+
 
 
 }
