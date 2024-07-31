@@ -112,9 +112,8 @@ public class AddSeller {
     public void user_input_wrong_seller_name(String name) {
         seller.enterName(name);
     }
-
-
-
-
-
+    @Then("user close the browser")
+    public void user_close_the_browser() {
+        Driver.quitDriver();
+    }
 }

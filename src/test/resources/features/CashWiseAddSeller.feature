@@ -1,3 +1,4 @@
+@RegressionTest
 Feature: Cash Wise Add Seller
   Background:
 
@@ -16,13 +17,14 @@ Scenario: add seller
   Then user input phoneNumber "phoneNumber"
   Then user input address "string"
   Then user click save
+  Then user close the browser
 
   @Verify
     Scenario: Verify Seller was added
     Then user clicks on Expensess
     Then user clicks on seller
     Then user verify seller was added
-
+    Then user close the browser
 
 
   @Negative
@@ -37,6 +39,7 @@ Scenario: add seller
     Then user input address "string"
     Then user click save
     Then user verify error message
+    Then user close the browser
 
     @Search
     Scenario: search name in search bar
@@ -44,6 +47,7 @@ Scenario: add seller
       Then user clicks on seller
       Then user clicks on search bar
       Then user will input a seller name
+      Then user close the browser
 
 
       @NegativeSearch
@@ -52,6 +56,7 @@ Scenario: add seller
         Then user clicks on seller
         Then user clicks on search bar
         Then user input wrong seller name "Johny"
+        Then user close the browser
 
 
 
