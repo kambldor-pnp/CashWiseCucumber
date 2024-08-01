@@ -1,37 +1,28 @@
 package utilities;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
 public class Config {
-
     private static Properties properties;
 
-
     static {
-        String path = "src/test/resources/configurations.properties";
 
-        try{
-
+        String path = "C:\\Users\\Administrator\\Desktop\\Stuff\\IdeaProjects\\CucumberProject\\src\\test\\resources\\configurations.properties";
+        try {
             FileInputStream file = new FileInputStream(path);
             properties = new Properties();
             properties.load(file);
             file.close();
-        }catch ( IOException e){
-            System.out.println("We could not read that file" + path);
-            e.printStackTrace();//prints the error message
+
+        } catch (IOException e) {
+            System.out.println("Cant read file: " + path);
+            e.printStackTrace();
         }
-
-
     }
 
-    public static String getProperty (String key){
-       return  properties.getProperty(key);
+    public static String getProperty(String key) {
+        return properties.getProperty(key);
     }
-
-
-
-
 }
