@@ -40,6 +40,16 @@ public class Driver {
         return driver;
 
     }
+
+    public static void close (){
+        driver.close();
+        driver = null;
+    }
+
+
+
+
+    }
     public static void quitDriver() {
         if (driver != null) {
             driver.quit();
