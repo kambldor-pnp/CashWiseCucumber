@@ -57,4 +57,12 @@ public class AddClientPage {
     @FindBy(xpath = "//span[contains(text(), 'List is empty')]")
     public WebElement emptyMessage;
 
+    @FindBy(xpath = "//p[@class=\"MuiTypography-root MuiTypography-body1  css-1p85ki1\"]")
+    public WebElement userAccount;
+    @FindBy(xpath = "//li[text()='Log out']")
+    public WebElement logout;
+    @FindBy(xpath = "//button[text()='Log out']")
+    public WebElement confirmLogout;
+
+
 }

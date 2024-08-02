@@ -96,6 +96,10 @@ public class AddCientTest {
         Assert.assertTrue(addClientPage.clientInfo.isDisplayed());
     }
 
+    @Then("user close the window")
+    public void user_close_the_window() {
+        Driver.quitDriver();
+    }
 
 
     @When("user inputs email {string}")
