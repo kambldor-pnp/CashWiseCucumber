@@ -5,6 +5,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         plugin = {"html:target/cucumberReport.html", "json:target/testReport.json"},
+
         features = "src\\test\\resources\\features",
         glue = "step_definitions",
         tags = "@RegressionTest",
@@ -13,3 +14,17 @@ import org.junit.runner.RunWith;
 public class CucumberRunner {
 
 }
+=======
+        features = "src/test/resources/features",
+        glue = "step_definitions",
+        tags = "@invoice",
+
+
+
+        dryRun = true
+
+)
+public class CucumberRunner {
+
+    }
+
