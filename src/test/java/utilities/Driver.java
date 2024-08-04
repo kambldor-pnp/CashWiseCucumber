@@ -10,6 +10,7 @@ import java.time.Duration;
 
 public class Driver {
 
+
         private static WebDriver driver;
 
         public static WebDriver getDriver() {
@@ -30,6 +31,7 @@ public class Driver {
                 }
                 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
                 driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
+
             }
             return driver;
         }
@@ -41,3 +43,4 @@ public class Driver {
             }
         }
     }
+
