@@ -4,6 +4,7 @@ import com.github.javafaker.Faker;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import pages.CheckPage;
 import utilities.Driver;
@@ -16,6 +17,11 @@ public class CheckSteps {
     SeleniumUtils seleniumUtils = new SeleniumUtils();
     Faker faker = new Faker();
 
+    @Given("user login ")
+    public void user_log_in(String LogIn){
+
+
+    }
 
     @When("user comes to expences page")
     public void user_comes_to_expences_page() {
@@ -35,11 +41,12 @@ public class CheckSteps {
         checkPage.titleButton.sendKeys(name);
 
     }
-    @When("user inputs comments\"Tuition feee\"")
-    public void user_inputs_comments_tuition_feee() {
-        checkPage.commentBox.sendKeys("Tuition Fee");
+    @When("user inputs comments {string}")
+    public void user_inputs_comments(String comments) {
+        checkPage.commentBox.sendKeys(comments);
 
     }
+
     @When("user adds the date {string}")
     public void user_adds_the_date(String date) {
         checkPage.dueDateButton.sendKeys(date);
@@ -51,8 +58,15 @@ public class CheckSteps {
 
     }
 
+    @When("confirm the message  {string}")
+    public void confirm_the_message(String message) {
+       String expected "The invoice was successfully created";
+        Assert.assertFalse();
+
+    }
+
     @When("close the browser")
     public void close_the_browser() {
-        Driver.close();
+        Driver.quitDriver();
     }
 }

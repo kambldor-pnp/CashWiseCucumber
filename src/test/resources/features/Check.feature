@@ -14,8 +14,26 @@
      And user selects to Checks
      And user adds an account
      And user inputs name "Ellza"
-     And user inputs comments"Tuition feee"
+     And user inputs comments "Tuition feee"
      And user adds the date "08/02/2024"
      And user clicks Add button
-     And close the browser
+     And confirm the message  "The invoice was successfully created"
+     Then close the browser
+
+
+
+    @WrongUserName
+    Scenario: add user with wrong name
+      When user comes to expences page
+      And user selects to Checks
+      And user adds an account
+      And user inputs name "123456"
+      And user inputs comments "Tuition fee"
+      And user adds the date "08/02/2024"
+      And user clicks Add button
+      And close the browser
+
+
+
+
 

@@ -49,6 +49,9 @@ import utilities.Driver;
         @FindBy(xpath = "//div[@id=\"react-select-4-listbox\"]//div[3]//div[@aria-disabled=\"false\"]")
         public WebElement selectWriteTitle;
 
+        @FindBy(xpath = "//div[@id=\"react-select-7-option-0\"]")
+        public WebElement addProduct;
+
         @FindBy(xpath = "//button[text()=\"Save\"]")
         public WebElement saveButton;
 
