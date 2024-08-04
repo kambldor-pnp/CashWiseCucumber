@@ -7,6 +7,20 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
+        plugin = {"html:target/cucumberReport.html","json:target/testRepot.json"},
+        features = "src/test/resources/features",
+        glue = "step_definitions",
+        tags = "@saucePositive",
+        dryRun = false
+)
+
+
+public class CucumberRunner {
+}
+=======
+
+@RunWith(Cucumber.class)
+@CucumberOptions(
             plugin = {"html:target/cucumberReport.html", "json:target/testReport.json"},
             features = "src/test/resources/features",
             glue = "step_definitions",
@@ -16,6 +30,7 @@ import org.junit.runner.RunWith;
     )
 public class CucumberRunner {
 }
+
 
 
 

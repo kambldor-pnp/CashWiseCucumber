@@ -46,9 +46,6 @@ public class LogInPage {
 
 
 
-    // Log out page classes
-    @FindBy(css = "#header > div.css-omke5m > p > svg")
-    public WebElement accountProfil;
 
     @FindBy(xpath = "//li[text()=\"Log out\"]")
     public WebElement logoutButton;
@@ -71,4 +68,4 @@ public class LogInPage {
     public WebElement laguageBtENG;
 
 
-}
+
