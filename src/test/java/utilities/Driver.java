@@ -11,7 +11,7 @@ public class Driver {
 
     private static WebDriver driver;
 
-    public static WebDriver getDriver(){
+    public static WebDriver getDriver() {
 
         if (driver == null) {
 
@@ -40,15 +40,10 @@ public class Driver {
         return driver;
     }
 
-    public static void close (){
-        driver.close();
-        driver = null;
-    }
 
 
-
+    
 }
-
 
 
 
