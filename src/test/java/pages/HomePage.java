@@ -7,37 +7,47 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
 
-public class HomePage {
 
-    WebDriver driver;
+    public class HomePage {
 
-    public HomePage() {
-        this.driver = Driver.getDriver();
-        PageFactory.initElements(driver, this);
+        WebDriver driver;
 
-    }
+        public HomePage() {
+            this.driver = Driver.getDriver();
+            PageFactory.initElements(driver, this);
 
-    @FindBy(xpath = "//button[text()='Sign in']")
-    public WebElement signInButton;
+        }
 
-    @FindBy(id = "email_input_text")
-    public WebElement emailInput;
+        @FindBy(xpath = "//button[text()='Sign in']")
+        public WebElement signInButton;
 
-    @FindBy(id = "password_input_text")
-    public WebElement passwordInput;
+        @FindBy(id = "email_input_text")
+        public WebElement emailInput;
 
-    @FindBy(xpath = "//form//button[text()='Sign in']")
-    public WebElement signInBtnInForm;
+        @FindBy(id = "password_input_text")
+        public WebElement passwordInput;
 
-    public void login(String username, String password) {
-        signInButton.click();
-        emailInput.sendKeys(username);
-        passwordInput.sendKeys(password);
-        signInBtnInForm.click();
-    }
+        @FindBy(xpath = "//form//button[text()='Sign in']")
+        public WebElement signInBtnInForm;
+
+        public void login(String username, String password) {
+            signInButton.click();
+            emailInput.sendKeys(username);
+            passwordInput.sendKeys(password);
+            signInBtnInForm.click();
+        }
+
+
+
+
+
+
+
+
 
 
 
 
 
 }
+
