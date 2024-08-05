@@ -116,4 +116,15 @@ public class AddSeller {
     public void user_close_the_browser() {
         Driver.quitDriver();
     }
+    @Then("user select first seller")
+    public void user_select_first_seller() throws InterruptedException {
+      seller.select1.click();
+      Thread.sleep(300);
+    }
+
+    @Then("user clicks on archive")
+    public void user_clicks_on_archive() {
+       seller.archive.click();
+    }
+
 }
