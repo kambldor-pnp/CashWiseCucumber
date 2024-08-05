@@ -9,7 +9,7 @@ public class Config {
 
     static {
 
-        String path = "C:\\Users\\Administrator\\Desktop\\Stuff\\IdeaProjects\\CucumberProject\\src\\test\\resources\\configurations.properties";
+        String path = "src/test/resources/configurations.properties";
         try {
             FileInputStream file = new FileInputStream(path);
             properties = new Properties();
@@ -22,7 +22,7 @@ public class Config {
         }
     }
 
-    public static String getProperty(String key) {
-        return properties.getProperty(key);
+    public static String getProperty (String key){
+        return  properties.getProperty(key);
     }
 }

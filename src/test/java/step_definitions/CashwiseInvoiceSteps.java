@@ -22,8 +22,8 @@ public class CashwiseInvoiceSteps {
     InvoiceReportingPage invoiceReportingPage = new InvoiceReportingPage ();
 
 
-    @Given("the user is on the Cashwise homepage")
-    public void the_user_is_on_the_cashwise_homepage() {
+    @Given("the user is on the homepage")
+    public void the_user_is_on_the_homepage() {
         driver.get("https://cashwise.us/");
         homePage.login("vladtest@gmail.com", "123456");
     }
@@ -122,8 +122,8 @@ public class CashwiseInvoiceSteps {
         invoiceReportingPage.expenseCategoryOption.click ();
     }
 
-    @And("user clicks on save button")
-    public void user_clicks_on_save_button () {
+    @And("user clicks on save ")
+    public void user_clicks_on_save () {
 
         invoiceReportingPage.SaveOption.click ();
     }

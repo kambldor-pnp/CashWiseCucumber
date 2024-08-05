@@ -2,7 +2,7 @@
   Feature:All tasks related to creating invoice functionality
 
     Background:
-      Given the user is on the Cashwise homepage
+      Given the user is on the homepage
       And User clicks on the Sales tab
       And User clicks on the Invoice option
 
@@ -25,7 +25,7 @@
         And  user clicks to Select income category
         And user clicks to Select to whom option
         And user fill in sum option
-        And user clicks on save button
+        And user clicks on save
         And user clicks on add all invoices
         And user clicks on paid button
         And user click Show pdf document for invoice
