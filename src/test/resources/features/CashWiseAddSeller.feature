@@ -60,6 +60,16 @@ Scenario: add seller
 
 
 
+      @Archive
+      Scenario: user add seller to Archive
+        Then user clicks on Expensess
+        Then user clicks on seller
+        Then user select first seller
+        Then user clicks on archive
+        Then user close the browser
+
+
+
 
 
 

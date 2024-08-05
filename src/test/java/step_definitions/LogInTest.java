@@ -34,3 +34,5 @@ public class LogInTest {
     }
     @Then("user clicks on login")
     public void user_clicks_on_login() {
+    }
+    }

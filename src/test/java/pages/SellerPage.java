@@ -52,6 +52,10 @@ public class SellerPage {
     public WebElement searchBar;
     @FindBy(xpath = "//table/tbody/tr[1]/td[3]")
     public WebElement nameSearched;
+    @FindBy(xpath = "//table/tbody/tr/td[1]")
+    public WebElement select1;
+    @FindBy(xpath = "//button[text()=\"Archive\"]")
+    public WebElement archive;
 
 
     //verify that name was add to the table,
