@@ -7,11 +7,13 @@ import org.junit.runner.RunWith;
         plugin = {"html:target/cucumberReport.html", "json:target/testReport.json"},
         features = "src/test/resources/features",
         glue = "step_definitions",
-        tags = "@AddingClient",
-        dryRun = false
+        tags = "@invoice",
+
+
+
+        dryRun = true
+
 )
+public class InvoiceRunner {
 
-
-public class CucucmberRunner {
-
-}
+    }

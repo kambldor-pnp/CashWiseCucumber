@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         tags = "@Archive",
         dryRun = false
 )
-public class CucumberRunner {
+public class LoginRunner {
 
 }
 

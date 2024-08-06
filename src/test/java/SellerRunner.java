@@ -5,15 +5,15 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         plugin = {"html:target/cucumberReport.html", "json:target/testReport.json"},
+
         features = "src/test/resources/features",
         glue = "step_definitions",
-        tags = "@invoice",
-
-
-
-        dryRun = true
-
+        tags = "@Archive",
+        dryRun = false
 )
-public class CucumberRunnerInvoice {
+public class SellerRunner {
 
-    }
+}
+
+
+
