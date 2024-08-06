@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 
         features = "src/test/resources/features",
         glue = "step_definitions",
-        tags = "@Archive",
+        tags = "@login",
         dryRun = false
 )
 public class LoginRunner {
