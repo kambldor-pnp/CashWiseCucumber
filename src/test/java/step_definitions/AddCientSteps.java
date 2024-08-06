@@ -5,13 +5,11 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.AddClientPage;
-import pages.LogInPage;
 import utilities.Driver;
 import utilities.SeleniumUtils;
 
-public class AddCientTest {
+public class AddCientSteps {
 
     WebDriver driver = Driver.getDriver();
     AddClientPage addClientPage= new AddClientPage();

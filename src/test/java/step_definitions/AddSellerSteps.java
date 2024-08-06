@@ -9,7 +9,7 @@ import pages.CashWiseHomePage;
 import pages.SellerPage;
 import utilities.Driver;
 
-public class AddSeller {
+public class AddSellerSteps {
     WebDriver driver = Driver.getDriver();
     CashWiseHomePage homePage = new CashWiseHomePage();
     SellerPage seller = new SellerPage();

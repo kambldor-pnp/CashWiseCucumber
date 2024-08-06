@@ -7,7 +7,7 @@ import pages.HomePage;
 import pages.LogInPage;
 import utilities.Driver;
 
-public class LogInTest {
+public class LogInSteps {
     WebDriver driver = Driver.getDriver();
 
     HomePage homePage = new HomePage();

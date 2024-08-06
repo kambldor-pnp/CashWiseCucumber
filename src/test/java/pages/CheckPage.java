@@ -19,7 +19,7 @@ import utilities.Driver;
         }
 
 
-        @FindBy(xpath = "//li[text()=\"Expenses\"]")
+        @FindBy(xpath = "//*[@id=\"sidebar\"]/div[3]")
         public WebElement report;
 
         @FindBy(xpath = "//a[@href=\"/dashboard/costs/checks\"]")
